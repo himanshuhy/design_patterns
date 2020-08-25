@@ -1,10 +1,9 @@
 package com.designpatterns.decorator;
 
-public class LowerCaseComponentDecorator implements Component {
-    private final Component component;
+public class LowerCaseComponentDecorator extends AbstractDecorator {
 
     public LowerCaseComponentDecorator(Component component) {
-        this.component = component;
+        super(component);
     }
     @Override
     public String getName() {
